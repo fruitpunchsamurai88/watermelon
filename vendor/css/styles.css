@@ -1,4 +1,6 @@
-﻿html, 
+﻿
+
+html, 
 body {
 		height: 100%;		
 		background-color: white;
@@ -89,6 +91,17 @@ header.masthead {
   header.masthead .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300; }
+	
+/* loadbar start */	
+#myProgress {
+    width: 100%;
+    background-color: grey;
+}
+#myBar {
+    width: 1%;
+    height: 30px;
+}
+/* loadbar end */
 
 @media (min-width: 768px) {
   header.masthead {
