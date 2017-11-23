@@ -92,6 +92,59 @@ header.masthead {
     font-size: 1.25em;
     font-weight: 300; }
 	
+/*-- Preloader --*/
+#elastic-preloader { 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  bottom: 0; 
+  right: 0; 
+  z-index: 1000000000000000000000000000000002; 
+  background: #FFF; 
+}
+#elastic-preloader h1 { 
+  display: block; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  z-index: 1000000000000000000000000000000003; 
+  width: 100%; 
+  height: 250px; 
+  line-height: 1; 
+  margin: auto; 
+  font-size: 250px; 
+  text-align: center; 
+}
+#elastic-preloader h1:after { 
+  content: "%"; 
+  padding-left: 30px; 
+  font-size: 80px; 
+  font-weight: normal; 
+}
+.mfp-close,.mfp-arrow,.mfp-preloader,.mfp-counter{-webkit-user-select:none;-moz-user-select:none;user-select:none}
+.mfp-loading.mfp-figure{display:none}
+.mfp-hide{display:none!important}
+.mfp-preloader{color:#CCC;position:absolute;top:50%;width:auto;text-align:center;margin-top:-.8em;left:8px;right:8px;z-index:1044}
+.mfp-preloader a{color:#CCC}
+.mfp-preloader a:hover{color:#FFF}
+.mfp-s-ready .mfp-preloader{display:none}
+
+/* Item Preloader */
+#item-preloader { position: fixed; top: 0; left: 0; bottom: 0; right: 0; z-index: 1000000000000000000000000000000006; padding-top: 25%; background: #FFF; }
+#preloader_1{ position:relative; z-index: 1000000000000000000000000000000007; width: 106px; margin: 0 auto; }
+#preloader_1 span{ display:block; bottom:0px; width: 18px; height: 10px; background: rgba(0,0,0,0.5);; position:absolute; animation: preloader_1 1.5s  infinite ease-in-out; }
+#preloader_1 span:nth-child(2){ left:22px; animation-delay: .2s; }
+#preloader_1 span:nth-child(3){ left:44px; animation-delay: .4s; }
+#preloader_1 span:nth-child(4){ left:66px; animation-delay: .6s; }
+#preloader_1 span:nth-child(5){ left:88px; animation-delay: .8s; }
+@keyframes preloader_1 {
+    0% {height:10px;transform:translateY(0px);background: rgba(0,0,0,0.5);}
+    25% {height:60px;transform:translateY(15px);background: rgba(0,0,0,1);}
+    50% {height:10px;transform:translateY(0px);background: rgba(0,0,0,0.5);}
+    100% {height:10px;transform:translateY(0px);background:rgba(0,0,0,0.5);}
+}
 
 
 @media (min-width: 768px) {
