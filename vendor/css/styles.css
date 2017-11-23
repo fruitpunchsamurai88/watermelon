@@ -92,16 +92,14 @@ header.masthead {
     font-size: 1.25em;
     font-weight: 300; }
 	
-/* loadbar start */	
-#myProgress {
-    width: 100%;
-    background-color: grey;
-}
-#myBar {
-    width: 1%;
-    height: 30px;
-}
-/* loadbar end */
+/**/
+.content {display:none;}
+.preload { width:100px;
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;}
+/**/
 
 @media (min-width: 768px) {
   header.masthead {
