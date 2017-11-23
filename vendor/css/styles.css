@@ -23,6 +23,7 @@ body {
 	    background-attachment: fixed;
 		background-image: url(../../images/header.jpg);
         background-repeat: no-repeat;
+		
 }
 
 #skills {
@@ -50,6 +51,19 @@ body {
 	display: none;
 } 
 
+#about .container{
+height: 100%
+}
+
+#about .container .row{
+position: relative;
+top: 50%;
+*top: 25%;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+
 .carousel-item {
   height: 65vh;
   min-height: 300px;
@@ -60,9 +74,11 @@ body {
   background-size: cover;
 }
 
+.h1, h1 {
+    font-size: 4rem;
+}
 
-
-h3 {
+.h3, h3 {
 		font-size: 1.2rem;
 		font-weight: bolder;
 		padding-top: 30px;
@@ -119,6 +135,21 @@ header.masthead {
 	  font-weight: lighter;
     }
 /**/
+
+.btn-dark.focus, .btn-dark:focus {
+    box-shadow: 0 0 0 0.1rem rgba(255,255,255,0.3) !important;
+}
+
+.btn-dark {
+	background: none;
+    color: #FFF;
+    border: 2px solid #FFF;
+	}
+	
+.btn-dark:hover {
+ 	background:  rgba( 171, 178, 185, 0.5) ;
+    border: 2px solid #FFF;	
+}	
 
 @media (min-width: 768px) {
   header.masthead {
